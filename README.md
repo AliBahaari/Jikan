@@ -6,5 +6,5 @@
 <br>
 For documentation or other things, You can visit [JikanCSS.ir](http://JikanCSS.ir).
 <br>
-## Contribution
+## Updating
 In the future, I will update ReadMe.md & explain more for GitHub page.
