@@ -1,6 +1,6 @@
 # Jikan
 
-![Jikan Logo](http://jikancss.ir/Images/Logo.png)
+<img src="http://jikancss.ir/Images/Logo.png" align="center">
 
 "Jikan" ins Kurdish means "Rain Drop", Actually is a new CSS framework for better, faster &amp; more beautiful websites.
 <br>
