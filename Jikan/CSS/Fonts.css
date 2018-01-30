@@ -1,0 +1,53 @@
+/* Sahel */
+
+@font-face {
+    font-family: Sahel;
+    src: url('../Fonts/Sahel-WOL.eot');
+    src: url('../Fonts/Sahel-WOL.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/Sahel-WOL.woff') format('woff'),
+         url('../Fonts/Sahel-WOL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url('../Fonts/Sahel-Bold-WOL.eot');
+    src: url('../Fonts/Sahel-Bold-WOL.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/Sahel-Bold-WOL.woff') format('woff'),
+         url('../Fonts/Sahel-Bold-WOL.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Roboto */
+
+@font-face {
+    font-family: Roboto;
+    src: url('../Fonts/Roboto-Bold.eot');
+    src: url('../Fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/Roboto-Bold.woff') format('woff'),
+         url('../Fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../Fonts/Roboto-Light.eot');
+    src: url('../Fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/Roboto-Light.woff') format('woff'),
+         url('../Fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../Fonts/Roboto-Regular.eot');
+    src: url('../Fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/Roboto-Regular.woff') format('woff'),
+         url('../Fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
