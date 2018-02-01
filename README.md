@@ -2,6 +2,7 @@
 
 <p align="center">
     <img src="http://jikancss.ir/Images/Logo.png">
+    <br>
     <strong>Jikan CSS Framework</strong>
 </p>
 
