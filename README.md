@@ -2,8 +2,8 @@
 
 <p align="center">
     <img src="http://jikancss.ir/Images/Logo.png">
+    <strong>Jikan CSS Framework</strong>
 </p>
-<strong align="center">Jikan CSS Framework</strong>
 
 "Jikan" ins Kurdish means "Rain Drop", Actually is a new CSS framework for better, faster &amp; more beautiful websites.
 <br>
