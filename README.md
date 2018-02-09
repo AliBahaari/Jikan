@@ -1,7 +1,7 @@
 # Jikan
 
 <p align="center">
-    <img src="http://jikancss.ir/Images/Logo.png">
+    <img src="http://JikanCSS.ir/Images/Logo.png">
     <br>
     <strong>Jikan CSS Framework</strong>
 </p>
