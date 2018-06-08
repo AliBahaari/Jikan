@@ -6,7 +6,7 @@
     <strong>Jikan CSS Framework</strong>
 </p>
 
-"Jikan" ins Kurdish means "Rain Drop", Actually is a new CSS framework for better, faster &amp; more beautiful websites.
+"Jikan" in Kurdish means "Rain Drop", Actually is a new CSS framework for better, faster &amp; more beautiful websites.
 <br>
 For documentation or other things, You can visit [JikanCSS.ir](http://JikanCSS.ir).
 <br>
