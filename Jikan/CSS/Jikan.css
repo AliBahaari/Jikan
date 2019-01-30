@@ -959,91 +959,300 @@ blockquote {
 
 /* Buttons */
 
-.btnHorizontalGroup,
-.btnVerticalGroup {
+.btn {
+    min-height: 40px;
+    text-align: center;
+    color: #FFF;
+    font-family: inherit;
+    font-size: .90rem;
+    border: 0;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    -webkit-transition: background-color linear 250ms;
+       -moz-transition: background-color linear 250ms;
+         -o-transition: background-color linear 250ms;
+            transition: background-color linear 250ms;
+}
+
+a.btn {
     display: inline-block;
-    margin: 5px 0;
+    text-decoration: none;
 }
 
-.btnHorizontalGroup::after {
-    content: "";
-    clear: both;
-    display: block;
+.btnLong {
+    padding: 10px 55px;
 }
 
-.btnVerticalBlock {
-    display: block;
+.btnBordered {
+    border-radius: 5px;
 }
 
-.btnHorizontalGroup button,
-.btnVerticalGroup button {
-    float: left;
-    margin: 0;
-    white-space: nowrap;
+.btnPrimary.btnOutline {
+    background-color: transparent;
+    border: 1px solid #204053;
+    color: #204053;
 }
 
-.btnVerticalGroup button {
-    width: 100%;
-    float: none;
-    display: block;
+.btnPrimary.btnOutline:hover {
+    background-color: #204053;
+    color: #FFF;
 }
 
-.btnVerticalGroup button.btnPrimary {
-    border-bottom: 1px solid #1B3545;
+.btnSecondary.btnOutline {
+    background-color: transparent;
+    border: 1px solid #839192;
+    color: #839192;
 }
 
-.btnVerticalGroup button.btnSecondary {
-    border-bottom: 1px solid #6F7E7F;
+.btnSecondary.btnOutline:hover {
+    background-color: #839192;
+    color: #FFF;
 }
 
-.btnVerticalGroup button.btnSuccess {
-    border-bottom: 1px solid #1B7942;
+.btnSuccess.btnOutline {
+    background-color: transparent;
+    border: 1px solid #229954;
+    color: #229954;
 }
 
-.btnVerticalGroup button.btnDanger {
-    border-bottom: 1px solid #AC382C;
+.btnSuccess.btnOutline:hover {
+    background-color: #229954;
+    color: #FFF;
 }
 
-.btnVerticalGroup button.btnWarning {
-    border-bottom: 1px solid #D3860B;
+.btnDanger.btnOutline {
+    background-color: transparent;
+    border: 1px solid #CB4335;
+    color: #CB4335;
 }
 
-.btnVerticalGroup button.btnInfo {
-    border-bottom: 1px solid #2670A1;
+.btnDanger.btnOutline:hover {
+    background-color: #CB4335;
+    color: #FFF;
 }
 
-.btnVerticalGroup button:last-child {
-    border-bottom: 0;
+.btnWarning.btnOutline {
+    background-color: transparent;
+    border: 1px solid #F39C12;
+    color: #F39C12;
 }
 
-.btnHorizontalJustify {
-    display: table;
-    border-collapse: collapse;
-    width: 100%;
-    table-layout: fixed;
-    margin: 5px 0;
+.btnWarning.btnOutline:hover {
+    background-color: #F39C12;
+    color: #FFF;
 }
 
-.btnHorizontalJustify > div {
-    width: 100%;
-    display: table-cell;
-    vertical-align: middle;  /* Needed For Safari */
+.btnInfo.btnOutline {
+    background-color: transparent;
+    border: 1px solid #2E86C1;
+    color: #2E86C1;
 }
 
-.btnHorizontalJustify button {
-    display: block;
-    width: 100%;
-    padding: 10px;
+.btnInfo.btnOutline:hover {
+    background-color: #2E86C1;
+    color: #FFF;
 }
 
-.btnGroupLarge button {
+.btnPrimary {
+    background-color: #204053;
+}
+
+.btnPrimary:hover {
+    background-color: #1B3545;
+}
+
+.btnPrimary:active,
+.btnPrimary:focus,
+.btnPrimary.btnOutline:active,
+.btnPrimary.btnOutline:focus {
+    background-color: #152A37;
+    border-color: #152A37;
+    color: #FFF;
+}
+
+.btnSecondary {
+    background-color: #839192;
+}
+
+.btnSecondary:hover {
+    background-color: #6F7E7F;
+}
+
+.btnSecondary:active,
+.btnSecondary:focus,
+.btnSecondary.btnOutline:active,
+.btnSecondary.btnOutline:focus {
+    background-color: #667374;
+    border-color: #667374;
+    color: #FFF;
+}
+
+.btnSuccess {
+    background-color: #229954;
+}
+
+.btnSuccess:hover {
+    background-color: #1B7942;
+}
+
+.btnSuccess:active,
+.btnSuccess:focus,
+.btnSuccess.btnOutline:active,
+.btnSuccess.btnOutline:focus {
+    background-color: #17693A;
+    border-color: #17693A;
+    color: #FFF;
+}
+
+.btnDanger {
+    background-color: #CB4335;
+}
+
+.btnDanger:hover {
+    background-color: #AC382C;
+}
+
+.btnDanger:active,
+.btnDanger:focus,
+.btnDanger.btnOutline:active,
+.btnDanger.btnOutline:focus {
+    background-color: #9D3328;
+    border-color: #9D3328;
+    color: #FFF;
+}
+
+.btnWarning {
+    background-color: #F39C12;
+}
+
+.btnWarning:hover {
+    background-color: #D3860B;
+}
+
+.btnWarning:active,
+.btnWarning:focus,
+.btnWarning.btnOutline:active,
+.btnWarning.btnOutline:focus {
+    background-color: #C07A0A;
+    border-color: #C07A0A;
+    color: #FFF;
+}
+
+.btnInfo {
+    background-color: #2E86C1;
+}
+
+.btnInfo:hover {
+    background-color: #2670A1;
+}
+
+.btnInfo:active,
+.btnInfo:focus,
+.btnInfo.btnOutline:active,
+.btnInfo.btnOutline:focus {
+    background-color: #236591;
+    border-color: #236591;
+    color: #FFF;
+}
+
+.btnLarge {
     min-height: 55px;
     font-size: 1.10rem;
 }
 
-.btnGroupSmall button {
+.btnSmall {
     min-height: 25px;
     font-size: .70rem;
+}
+
+.btnBlock {
+    width: 100%;
+    display: block;
+}
+
+.btnRotateLeft {
+    -webkit-transform: rotate(-90deg);
+       -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+         -o-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: center center;
+       -moz-transform-origin: center center;
+        -ms-transform-origin: center center;
+         -o-transform-origin: center center;
+            transform-origin: center center;
+}
+
+.btnRotateRight {
+    -webkit-transform: rotate(90deg);
+       -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transform-origin: center center;
+       -moz-transform-origin: center center;
+        -ms-transform-origin: center center;
+         -o-transform-origin: center center;
+            transform-origin: center center;
+}
+
+.btnPrimary:disabled,
+.btnSecondary:disabled,
+.btnSuccess:disabled,
+.btnDanger:disabled,
+.btnWarning:disabled,
+.btnInfo:disabled {
+    opacity: 0.75;
+    cursor: not-allowed;
+}
+
+.btnPrimary:disabled {
+    background-color: #204053;
+}
+
+.btnSecondary:disabled {
+    background-color: #839192;
+}
+
+.btnSuccess:disabled {
+    background-color: #229954;
+}
+
+.btnDanger:disabled {
+    background-color: #CB4335;
+}
+
+.btnWarning:disabled {
+    background-color: #F39C12;
+}
+
+.btnInfo:disabled {
+    background-color: #2E86C1;
+}
+
+.btnPrimary.btnActive {
+    background-color: #152A37;
+}
+
+.btnSecondary.btnActive{
+    background-color: #839192;
+}
+
+.btnSuccess.btnActive {
+    background-color: #17693A;
+}
+
+.btnDanger.btnActive {
+    background-color: #9D3328;
+}
+
+.btnWarning.btnActive {
+    background-color: #C07A0A;
+}
+
+.btnInfo.btnActive {
+    background-color: #236591;
 }
 
 /* Forms */
