@@ -1,4 +1,4 @@
-# Jikan CSS Framework
+# Jikan
 
 <p align="center">
     <img src="http://AliBahaari.ir/Images/Jikan-Logo.png">
