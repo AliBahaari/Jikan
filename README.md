@@ -1,9 +1,5 @@
 # Jikan CSS Framework
 
-<p align="center">
-    <img src="http://AliBahaari.ir/Images/Jikan-Logo.png">
-</p>
-
 ![HTML Badge](https://alibahaari.github.io/Badge/HTML.png)
 ![CSS Badge](https://alibahaari.github.io/Badge/CSS.png)
 ![JavaScript Badge](https://alibahaari.github.io/Badge/JavaScript.png)
