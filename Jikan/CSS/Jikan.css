@@ -8,42 +8,11 @@
             box-sizing: border-box;
 }
 
-*:focus,
-*:active,
-*:hover {
-    outline: none;
-}
-
-*::-moz-focus-inner {
-    border: 0;
-}
-
 /* Cells */
-
-@-ms-viewport {
-    width: device-width;
-}
 
 .ctr {
     width: 85%;
     margin: 0 auto;
-}
-
-.ctrFull {
-    width: 100vw;
-    height: 100vh;
-}
-
-.ctrRect {
-    width: 70vw;
-    height: 70vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 10000;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
 }
 
 .row::after {
@@ -585,8 +554,8 @@
 
 html,
 body {
-    font-family: Sahel, Roboto;
-    font-size: 1rem;
+    font-family: Vazir;
+    font-size: 14px;
 }
 
 h1,
@@ -595,33 +564,31 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 15px 0;
-    line-height: 1.15;
-    font-weight: 300;
+    margin: 8px 0;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 32px;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 28px;
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 24px;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 20px;
 }
 
 h5 {
-    font-size: 1.25rem;
+    font-size: 16px;
 }
 
 h6 {
-    font-size: 1rem;
+    font-size: 12px;
 }
 
 h1 small,
@@ -630,35 +597,27 @@ h3 small,
 h4 small,
 h5 small,
 h6 small {
-    font-size: 65%;
+    font-size: 50%;
+    font-weight: 400;
 }
 
 pre {
-    border-radius: 10px;
-    font-family: inherit;
-    font-size: .90rem;
+    font-family: 'Courier New', monospace;
+    border-radius: 4px;
+    font-size: 12px;
     background-color: #F5F5F5;
-    padding: 20px;
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, Since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    padding: 6px;
+    overflow-x: auto;
 }
 
 code {
-    background-color: #EC7063;
-    color: #FFF;
-    font-family: inherit;
-    padding: 1.5px 10px;
-    border-radius: 3.5px;
-    font-size: .80rem;
+    font-family: 'Courier New', monospace;
+    color: #1B4F72;
 }
 
 hr {
     border: 0;
     border-top: 1.5px solid #BBB;
-    margin: 15px 0;
 }
 
 .txtMuted {
@@ -666,17 +625,17 @@ hr {
 }
 
 p {
-    line-height: 1.60;
+    line-height: 1.5;
 }
 
 mark {
-    background-color: #F4D03F;
-    padding: .25px 10px 1.5px 10px;
-    border-radius: 3.5px;
+    background-color: #F7DC6F;
+    padding: 2px 4px;
+    border-radius: 2px;
 }
 
 small {
-    font-size: .75rem;
+    font-size: 10px;
 }
 
 strong {
@@ -685,22 +644,17 @@ strong {
 
 abbr {
     cursor: help;
-    font-size: .90rem;
-}
-
-cite {
-    font-size: .90rem;
 }
 
 blockquote {
-    font-size: 1.25rem;
-    line-height: 1.5;
+    font-style: italic;
 }
 
 .bkqCaption {
-    font-size: .85rem;
+    font-size: 12px;
     margin: 10px 0;
-    color: #555;
+    color: #424949;
+    font-style: normal;
 }
 
 .bkqCaption::before {
@@ -708,18 +662,12 @@ blockquote {
 }
 
 .lnk {
-    color: #2E86C1;
+    color: #3498DB;
 }
 
 .lnk:focus,
 .lnk:active {
-    color: #CB4335;
-}
-
-.wrdBreak {
-    -ms-word-break: break-all;
-        word-break: break-all;
-        word-break: break-word; /* Non-Standard For WebKit */
+    color: #E74C3C;
 }
 
 /* Alert */
