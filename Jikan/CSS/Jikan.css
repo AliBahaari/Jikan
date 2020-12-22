@@ -15,6 +15,10 @@
     --danger-background: #E74C3C;
     --warning-background: #F39C12;
     --info-background: #3498DB;
+    --link-color: #2980B9;
+    --link-color-active-focus: #CB4335;
+    --gray-background: #F8F9F9;
+    --muted-text: #858585;
 }
 
 /* Cells */
@@ -630,7 +634,7 @@ hr {
 }
 
 .txtMuted {
-    color: #757575;
+    color: var(--muted-text);
 }
 
 p {
@@ -671,12 +675,12 @@ blockquote {
 }
 
 .lnk {
-    color: #3498DB;
+    color: var(--link-color);
 }
 
 .lnk:focus,
 .lnk:active {
-    color: #E74C3C;
+    color: var(--link-color-active-focus);
 }
 
 /* Alert */
@@ -778,8 +782,8 @@ blockquote {
 /* Breadcrumb */
 
 .bcu {
-    background-color: #EEE;
-    margin: 5px 0;
+    background-color: var(--gray-background);
+    margin: 4px 0;
 }
 
 .bcu::after {
@@ -790,20 +794,16 @@ blockquote {
 
 .bcu li {
     float: left;
-    font-size: .9rem;
-    padding: 10px 0;
-    color: #757575;
+    font-size: 12px;
+    padding: 8px 0;
+    color: var(--muted-text);
     list-style-type: none;
-}
-
-.bcu li:last-child {
-    padding-right: 10px;
 }
 
 .bcu li::before {
     content: "\2192";
-    margin: 0 10px;
-    font-size: .75rem;
+    margin: 0 8px;
+    font-size: 12px;
 }
 
 .bcu li:first-child::before {
@@ -811,13 +811,12 @@ blockquote {
 }
 
 .bcu li a {
-    text-decoration: none;
-    color: #2E86C1;
+    color: var(--link-color);
 }
 
 .bcu li a:active,
 .bcu li a:focus {
-    color: #CB4335;
+    color: var(--link-color-active-focus);
 }
 
 /* Button Group */
