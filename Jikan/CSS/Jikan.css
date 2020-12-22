@@ -1,4 +1,4 @@
-/* Reset */
+/* Initializing */
 
 * {
     margin: 0;
@@ -6,6 +6,15 @@
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+:root {
+    --primary-background: #212F3C;
+    --secondary-background: #7B7D7D;
+    --success-background: #28B463;
+    --danger-background: #E74C3C;
+    --warning-background: #F39C12;
+    --info-background: #3498DB;
 }
 
 /* Cells */
@@ -673,43 +682,38 @@ blockquote {
 /* Alert */
 
 .alt {
-    padding: 20px 15px;
+    padding: 12px;
     color: #FFF;
-    margin: 10px 0;
+    margin: 4px 0;
+    font-size: 12px;
 }
 
 .altPrimary {
-    background-color: #204053;
+    background-color: var(--primary-background);
 }
 
 .altSecondary {
-    background-color: #839192;
+    background-color: var(--secondary-background);
 }
 
 .altSuccess {
-    background-color: #229954;
+    background-color: var(--success-background);
 }
 
 .altDanger {
-    background-color: #CB4335;
+    background-color: var(--danger-background);
 }
 
 .altWarning {
-    background-color: #F39C12;
+    background-color: var(--warning-background);
 }
 
 .altInfo {
-    background-color: #2E86C1;
+    background-color: var(--info-background);
 }
 
 .alt a {
-    font-weight: 600;
     color: #FFF;
-    text-decoration: none;
-}
-
-.alt a:hover {
-    text-decoration: underline;
 }
 
 /* Arrangement */
