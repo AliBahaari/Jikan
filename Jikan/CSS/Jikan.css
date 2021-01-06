@@ -2271,11 +2271,12 @@ figcaption {
 
 .sldItem {
     position: relative;
-	display: none;
+    display: none;
 }
 
 .sldItem img {
-	width: 100%;
+    width: 100%;
+    display: block;
 }
 
 .sldItem .sldText {
@@ -2292,13 +2293,16 @@ figcaption {
 	font-size: 20px;
 	color: #FFF;
 	position: absolute;
-	top: calc(50% - 30px);
+	top: 50%;
 	cursor: pointer;
 	text-shadow: 0 0 6px rgba(0, 0, 0, .2);
     -webkit-transition: background-color ease 100ms;
        -moz-transition: background-color ease 100ms;
          -o-transition: background-color ease 100ms;
             transition: background-color ease 100ms;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);            
 }
 
 .sldNext {
@@ -2341,28 +2345,28 @@ figcaption {
 	background-color: #AAA !important;
 }
 
-/* Slider Text Positions */
+/* Slider Texts Positions */
 
 .LeftTop {
-	top: 15px;
-	left: 15px;
+	top: 14px;
+	left: 14px;
 }
 
 .LeftCenter {
 	top: 50%;
-	left: 15px;
+	left: 14px;
 	-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 			transform: translateY(-50%);
 }
 
 .LeftBottom {
-	left: 15px;
-	bottom: 15px;
+	left: 14px;
+	bottom: 14px;
 }
 
 .CenterTop {
-	top: 15px;
+	top: 14px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
@@ -2379,28 +2383,28 @@ figcaption {
 
 .CenterBottom {
 	left: 50%;
-	bottom: 50px;
+	bottom: 14px;
 	-webkit-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
 			transform: translateX(-50%);
 }
 
 .RightTop {
-	top: 15px;
-	right: 15px;
+	top: 14px;
+	right: 14px;
 }
 
 .RightCenter {
 	top: 50%;
-	right: 15px;
+	right: 14px;
 	-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 			transform: translateY(-50%);
 }
 
 .RightBottom {
-	right: 15px;
-	bottom: 15px;
+	right: 14px;
+	bottom: 14px;
 }
 
 /* Tab */
