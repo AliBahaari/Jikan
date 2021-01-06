@@ -2266,62 +2266,47 @@ figcaption {
 /* Slider */
 
 .sld {
-	position: relative;
 	margin: 10px 0;
 }
 
-.sldFullScreen {
-	margin: 0;
-}
-
 .sldItem {
+    position: relative;
 	display: none;
 }
 
 .sldItem img {
 	width: 100%;
-	display: block;
-}
-
-.sldFullScreen .sldItem img {
-	height: 100vh;
 }
 
 .sldItem .sldText {
-	background-color: #151515;
-	padding: 5px 10px;
+	background-color: rgba(0, 0, 0, .4);
+	padding: 4px 6px;
 	position: absolute;
 	color: #FFF;
-	font-size: .90rem;
-	border-radius: 3.5px;
+    font-size: 10px;
+    border-radius: 2px;
 }
 
 .sldNext,
 .sldPre {
-	font-weight: bold;
-	font-size: 1.5rem;
+	font-size: 20px;
 	color: #FFF;
 	position: absolute;
-	top: 50%;
+	top: calc(50% - 30px);
 	cursor: pointer;
-	text-shadow: 0 0 7.5px rgba(0, 0, 0, 1);
-	padding: 1.5px 15px;
-	border-radius: 100%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    -webkit-transition: background-color linear 250ms;
-       -moz-transition: background-color linear 250ms;
-         -o-transition: background-color linear 250ms;
-            transition: background-color linear 250ms;
+	text-shadow: 0 0 6px rgba(0, 0, 0, .2);
+    -webkit-transition: background-color ease 100ms;
+       -moz-transition: background-color ease 100ms;
+         -o-transition: background-color ease 100ms;
+            transition: background-color ease 100ms;
 }
 
 .sldNext {
-	right: 40px;
+	right: 30px;
 }
 
 .sldPre {
-	left: 40px;
+	left: 30px;
 }
 
 .sldNext:hover,
@@ -2329,41 +2314,31 @@ figcaption {
 	color: #EEE;
 }
 
-.sldNext::selection,
-.sldPre::selection {
-    background-color: transparent; /* WebKit/Blink Browsers */
-}
-
-.sldNext::-moz-selection,
-.sldPre::-moz-selection {
-    background-color: transparent; /* Gecko Browsers */
-}
-
 .sldDot {
 	text-align: center;
-	margin: 15px 0;
+	margin-bottom: 10px;
 }
 
 .sldDot span {
 	display: inline-block;
-	width: 15px;
-	height: 15px;
-	background-color: #CCC;
-	border-radius: 100%;
-	margin: 0 2.5px;
+	width: 10px;
+	height: 10px;
+	background-color: #EEE;
+	border-radius: 2px;
+	margin: 0 2px;
 	cursor: pointer;
-    -webkit-transition: background-color linear 250ms;
-       -moz-transition: background-color linear 250ms;
-         -o-transition: background-color linear 250ms;
-            transition: background-color linear 250ms;
+    -webkit-transition: background-color ease 100ms;
+       -moz-transition: background-color ease 100ms;
+         -o-transition: background-color ease 100ms;
+            transition: background-color ease 100ms;
 }
 
 .sldDot span:hover {
-	background-color: #AAA;
+	background-color: #DDD;
 }
 
 .sldActiveDot {
-	background-color: #555 !important;
+	background-color: #AAA !important;
 }
 
 .sldFullScreen .sldDot {
