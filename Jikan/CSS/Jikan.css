@@ -2347,12 +2347,12 @@ figcaption {
 
 /* Slider Texts Positions */
 
-.LeftTop {
+.leftTop {
 	top: 14px;
 	left: 14px;
 }
 
-.LeftCenter {
+.leftCenter {
 	top: 50%;
 	left: 14px;
 	-webkit-transform: translateY(-50%);
@@ -2360,12 +2360,12 @@ figcaption {
 			transform: translateY(-50%);
 }
 
-.LeftBottom {
+.leftBottom {
 	left: 14px;
 	bottom: 14px;
 }
 
-.CenterTop {
+.centerTop {
 	top: 14px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
@@ -2373,7 +2373,7 @@ figcaption {
 			transform: translateX(-50%);
 }
 
-.CenterCenter {
+.centerCenter {
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%);
@@ -2381,7 +2381,7 @@ figcaption {
 			transform: translate(-50%);
 }
 
-.CenterBottom {
+.centerBottom {
 	left: 50%;
 	bottom: 14px;
 	-webkit-transform: translateX(-50%);
@@ -2389,12 +2389,12 @@ figcaption {
 			transform: translateX(-50%);
 }
 
-.RightTop {
+.rightTop {
 	top: 14px;
 	right: 14px;
 }
 
-.RightCenter {
+.rightCenter {
 	top: 50%;
 	right: 14px;
 	-webkit-transform: translateY(-50%);
@@ -2402,7 +2402,7 @@ figcaption {
 			transform: translateY(-50%);
 }
 
-.RightBottom {
+.rightBottom {
 	right: 14px;
 	bottom: 14px;
 }
