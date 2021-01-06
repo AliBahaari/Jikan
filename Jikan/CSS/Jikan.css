@@ -1599,13 +1599,14 @@ blockquote {
 /* Images */
 
 figure {
-    margin-bottom: 10px;
+    display: inline-block;
 }
 
 figcaption {
     text-align: center;
     font-size: 12px;
     color: var(--muted-color);
+    margin-bottom: 10px;
 }
 
 .imgResponsive {
@@ -2507,20 +2508,19 @@ figcaption {
     width: 100%;
     border-collapse: collapse;
     margin: 10px 0;
-    background-color: #FFF;
 }
 
 .tbl thead tr th {
     font-weight: 600;
-    padding: 10px;
-    border-bottom: 2.5px solid #DDD;
+    padding: 10px 0;
+    border-bottom: 2px solid #DDD;
 }
 
 .tbl tbody tr td {
     text-align: center;
     border-top: 1px solid #DDD;
     padding: 10px;
-    font-size: .95rem;
+    font-size: 12px;
 }
 
 .tblStriped tbody tr:nth-child(odd) {
@@ -2532,9 +2532,8 @@ figcaption {
 }
 
 .tblBordered thead tr th {
-    border-top: 1px solid #DDD;
-    border-left: 1px solid #DDD;
-    border-right: 1px solid #DDD;
+    border: 1px solid #DDD;
+    border-bottom-width: 2px;
 }
 
 .tblBordered tbody tr td {
@@ -2543,7 +2542,7 @@ figcaption {
 
 .tblSmall thead tr th,
 .tblSmall tbody tr td {
-    padding: 5px;
+    padding: 4px;
 }
 
 .tblResponsive {
@@ -2560,8 +2559,8 @@ figcaption {
 
 .tblCaption {
     text-align: center;
-    font-size: .75rem;
-    color: #555;
+    font-size: 10px;
+    color: var(--muted-color);
     margin: 10px 0;
 }
 
