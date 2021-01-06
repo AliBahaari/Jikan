@@ -1091,8 +1091,6 @@ blockquote {
     background-color: var(--info-color-active-focus);
 }
 
-/* Here */
-
 /* Button Group */
 
 .btnHorizontalGroup,
@@ -1600,20 +1598,14 @@ blockquote {
 
 /* Images */
 
-img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 figure {
-    padding: 10px;
+    margin-bottom: 10px;
 }
 
 figcaption {
     text-align: center;
-    font-size: .75rem;
-    color: #555;
-    margin: 10px 0;
+    font-size: 12px;
+    color: var(--muted-color);
 }
 
 .imgResponsive {
@@ -1622,14 +1614,14 @@ figcaption {
 }
 
 .imgThumbnail {
-    width: 200px;
-    height: 200px;
-    border: 1px solid #DDD;
-    padding: 5px;
+    width: 160px;
+    height: 160px;
+    border: 1px solid #EEE;
+    padding: 4px;
 }
 
 .imgRounded {
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .imgCenter {
