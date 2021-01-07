@@ -43,6 +43,8 @@
     --selection: #EBF5FB;
     /* Tooltip */
     --tooltip-color: #1B4F72;
+    /* List Group Badge */
+    --list-group-badge-color: #F39C12;
 }
 
 /* Cells */
@@ -699,12 +701,12 @@ blockquote {
     content: "\2015 \00A0";
 }
 
-.lnk {
+a {
     color: var(--link-color);
 }
 
-.lnk:focus,
-.lnk:active {
+a:focus,
+a:active {
     color: var(--link-color-active-focus);
 }
 
@@ -833,15 +835,6 @@ blockquote {
 
 .bcu li:first-child::before {
     content: "";
-}
-
-.bcu li a {
-    color: var(--link-color);
-}
-
-.bcu li a:active,
-.bcu li a:focus {
-    color: var(--link-color-active-focus);
 }
 
 /* Buttons */
@@ -1662,70 +1655,49 @@ figcaption {
     border: 1px solid #DDD;
 }
 
-/* List */
+/* Simple List */
 
 .lst {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .lst li {
-    margin: 5px 15px;
-    font-size: .95rem;
+    margin: 2px 12px;
+    font-size: 12px;
 }
 
-.lst li a {
-    color: #2E86C1;
-}
-
-.lst li a:focus,
-.lst li a:active {
-    color: #CB4335;
-}
+/* Group List */
 
 .lstGroup {
     border: 1px solid #EEE;
-    margin: 5px 0;
-    background-color: #FFF;
+    margin: 10px 0;
 }
 
 .lstGroup li {
     list-style-type: none;
     border-bottom: 1px solid #EEE;
-    padding: 10px 15px;
+    padding: 6px 10px;
 }
 
 .lstGroup li:last-child {
     border-bottom: 0;
 }
 
-.lstGroup a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    border-bottom: 1px solid #EEE;
-    padding: 10px 15px !important;
-}
-
-.lstGroup a:last-child {
-    border-bottom: 0;
-}
-
 .lstBadge {
     float: right;
-    font-size: .80rem;
-    background-color: #884EA0;
-    padding: 3.5px 5px;
+    font-size: 10px;
+    background-color: var(--list-group-badge-color);
+    padding: 2px 4px;
     color: #FFF;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .lstActive {
-    background-color: #EEE;
-    padding-left: 30px !important;
+    background-color: #F5F5F5;
 }
 
 .lstDisabled {
-    color: #AAA !important;
+    color: #AAA;
     cursor: not-allowed;
 }
 
