@@ -2086,109 +2086,73 @@ figcaption {
 
 .pnlHeader,
 .pnlFooter {
-    font-size: .90rem;
-    padding: 5px 10px;
-}
-
-.pnlFooter {
-    border-bottom: 0 !important;
+    font-weight: bold;
+    padding: 4px 8px;
 }
 
 .pnlBody {
-    padding: 15px 10px;
-    background-color: #FFF;
+    padding: 8px;
 }
 
 .pnlPrimary {
-    border: 1px solid #204053;
+    border: 1px solid var(--primary-color);
 }
 
 .pnlPrimary .pnlHeader,
 .pnlPrimary .pnlFooter {
-    background-color: #204053;
-    border-bottom: 1px solid #204053;
+    background-color: var(--primary-color);
     color: #FFF;
 }
 
-.pnlPrimary .pnlFooter {
-    border-top: 1px solid #204053;
-}
-
 .pnlSecondary {
-    border: 1px solid #839192;
+    border: 1px solid var(--secondary-color);
 }
 
 .pnlSecondary .pnlHeader,
 .pnlSecondary .pnlFooter {
-    background-color: #839192;
-    border-bottom: 1px solid #839192;
+    background-color: var(--secondary-color);
     color: #FFF;
 }
 
-.pnlSecondary .pnlFooter {
-    border-top: 1px solid #839192;
-}
-
 .pnlSuccess {
-    border: 1px solid #229954;
+    border: 1px solid var(--success-color);
 }
 
 .pnlSuccess .pnlHeader,
 .pnlSuccess .pnlFooter {
-    background-color: #229954;
-    border-bottom: 1px solid #229954;
+    background-color: var(--success-color);
     color: #FFF;
 }
 
-.pnlSuccess .pnlFooter {
-    border-top: 1px solid #229954;
-}
-
 .pnlDanger {
-    border: 1px solid #CB4335;
+    border: 1px solid var(--danger-color);
 }
 
 .pnlDanger .pnlHeader,
 .pnlDanger .pnlFooter {
-    background-color: #CB4335;
-    border-bottom: 1px solid #CB4335;
+    background-color: var(--danger-color);
     color: #FFF;
 }
 
-.pnlDanger .pnlFooter {
-    border-top: 1px solid #CB4335;
-}
-
 .pnlWarning {
-    border: 1px solid #F39C12;
+    border: 1px solid var(--warning-color);
 }
 
 .pnlWarning .pnlHeader,
 .pnlWarning .pnlFooter {
-    background-color: #F39C12;
-    border-bottom: 1px solid #F39C12;
+    background-color: var(--warning-color);
     color: #FFF;
 }
 
-.pnlWarning .pnlFooter {
-    border-top: 1px solid #F39C12;
-}
-
 .pnlInfo {
-    border: 1px solid #2E86C1;
+    border: 1px solid var(--info-color);
 }
 
 .pnlInfo .pnlHeader,
 .pnlInfo .pnlFooter {
-    background-color: #2E86C1;
-    border-bottom: 1px solid #2E86C1;
+    background-color: var(--info-color);
     color: #FFF;
 }
-
-.pnlInfo .pnlFooter {
-    border-top: 1px solid #2E86C1;
-}
-
 
 /* Print */
 
