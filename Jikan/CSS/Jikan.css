@@ -2222,43 +2222,37 @@ figcaption {
     margin: 10px 0;
 }
 
-.prg::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 .prgBar {
-    width: 40%;
-    float: left;
-    font-size: .80rem;
-    padding: 3.5px 10px;
+    width: 50%;
+    font-size: 10px;
     text-align: center;
     color: #FFF;
+    padding: 2px;
+    font-weight: bold;
 }
 
 .prgPrimary {
-    background-color: #204053;
+    background-color: var(--primary-color);
 }
 
 .prgSecondary {
-    background-color: #839192;
+    background-color: var(--secondary-color);
 }
 
 .prgSuccess {
-    background-color: #229954;
+    background-color: var(--success-color);
 }
 
 .prgDanger {
-    background-color: #CB4335;
+    background-color: var(--danger-color);
 }
 
 .prgWarning {
-    background-color: #F39C12;
+    background-color: var(--warning-color);
 }
 
 .prgInfo {
-    background-color: #2E86C1;
+    background-color: var(--info-color);
 }
 
 /* Slider */
