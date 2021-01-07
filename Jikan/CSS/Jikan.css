@@ -1642,27 +1642,24 @@ figcaption {
 /* Jumbotron */
 
 .jmb {
-    padding: 25px 20px;
-    background-color: #E5E5E5;
-    border-radius: 3.5px;
+    background-color: var(--gray-color);
+    border-radius: 4px;
     margin: 10px 0;
+    padding: 14px;
 }
 
 .jmbTitle {
-    font-size: 3rem;
-    font-weight: 300;
-    margin: 5px 0;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .jmbText {
-    color: #555;
-    margin: 5px 0;
+    color:var(--muted-color);
 }
 
 .jmbLine {
     margin: 10px 0;
-    border-top-width: 1px;
-    border-top-color: #CCC;
+    border: 1px solid #DDD;
 }
 
 /* List */
