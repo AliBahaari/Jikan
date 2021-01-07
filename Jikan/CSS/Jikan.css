@@ -645,6 +645,7 @@ pre {
     background-color: #F5F5F5;
     padding: 6px;
     overflow-x: auto;
+    margin: 10px 0;
 }
 
 code {
