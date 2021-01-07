@@ -1741,7 +1741,7 @@ figcaption {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    border-top: 5px solid #E5E5E5;
+    border-top: 5px solid transparent;
     border-right: 5px solid #000;
     border-bottom: 5px solid #000;
     border-left: 5px solid #000;
@@ -1759,44 +1759,38 @@ figcaption {
 }
 
 .ldrPrimary {
-    border-right-color: #204053;
-    border-bottom-color: #204053;
-    border-left-color: #204053;
+    border-color: var(--primary-color);
+    border-top-color: transparent;
 }
 
 .ldrSecondary {
-    border-right-color: #839192;
-    border-bottom-color: #839192;
-    border-left-color: #839192;
+    border-color: var(--secondary-color);
+    border-top-color: transparent;
 }
 
 .ldrSuccess {
-    border-right-color: #229954;
-    border-bottom-color: #229954;
-    border-left-color: #229954;
+    border-color: var(--success-color);
+    border-top-color: transparent;
 }
 
 .ldrDanger {
-    border-right-color: #CB4335;
-    border-bottom-color: #CB4335;
-    border-left-color: #CB4335;
+    border-color: var(--danger-color);
+    border-top-color: transparent;
 }
 
 .ldrWarning {
-    border-right-color: #F39C12;
-    border-bottom-color: #F39C12;
-    border-left-color: #F39C12;
+    border-color: var(--warning-color);
+    border-top-color: transparent;
 }
 
 .ldrInfo {
-    border-right-color: #2E86C1;
-    border-bottom-color: #2E86C1;
-    border-left-color: #2E86C1;
+    border-color: var(--info-color);
+    border-top-color: transparent;
 }
 
 .ldrAnimation {
-    -webkit-animation: Loadrs .75s infinite;  /* Safari 4.0 - 8.0 */
-    animation: Loaders .75s infinite;
+    -webkit-animation: Loadrs .5s infinite;
+    animation: Loaders .5s infinite;
 }
 
 @-webkit-keyframes Loaders {
