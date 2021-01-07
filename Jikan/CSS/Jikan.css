@@ -33,12 +33,16 @@
     --info-color: #3498DB;
     --info-color-hover: #2E86C1;
     --info-color-active-focus: #2874A6;
-    /* Others */
+    /* Link */
     --link-color: #2980B9;
     --link-color-active-focus: #CB4335;
+    /* Main Background & Muted */
     --gray-color: #F8F9F9;
     --muted-color: #858585;
+    /* Selection */
     --selection: #EBF5FB;
+    /* Tooltip */
+    --tooltip-color: #1B4F72;
 }
 
 /* Cells */
@@ -2545,11 +2549,12 @@ figcaption {
 	visibility: hidden;
 	position: absolute;
 	white-space: nowrap;
-	background-color: #555;
+    background-color: var(--tooltip-color);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 	color: #FFF;
-	font-size: .80rem;
-	font-weight: 300;
-	padding: 5px 10px;
+	font-size: 10px;
+	padding: 4px 10px;
 	z-index: 6000;
 }
 
@@ -2569,9 +2574,9 @@ figcaption {
 	content: "";
 	width: 0;
 	height: 0;
-	border-top: 5px solid #555;
-	border-right: 5px solid transparent;
-	border-left: 5px solid transparent;
+	border-top: 4px solid var(--tooltip-color);
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -2592,9 +2597,9 @@ figcaption {
 	content: "";
 	width: 0;
 	height: 0;
-	border-bottom: 5px solid #555;
-	border-right: 5px solid transparent;
-	border-left: 5px solid transparent;
+	border-bottom: 4px solid var(--tooltip-color);
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
 	position: absolute;
 	bottom: 100%;
 	left: 50%;
@@ -2615,9 +2620,9 @@ figcaption {
 	content: "";
 	width: 0;
 	height: 0;
-	border-top: 5px solid transparent;
-	border-right: 5px solid #555;
-	border-bottom: 5px solid transparent;
+	border-top: 4px solid transparent;
+	border-right: 4px solid var(--tooltip-color);
+	border-bottom: 4px solid transparent;
 	position: absolute;
 	top: 50%;
 	right: 100%;
@@ -2638,9 +2643,9 @@ figcaption {
 	content: "";
 	width: 0;
 	height: 0;
-	border-top: 5px solid transparent;
-	border-left: 5px solid #555;
-	border-bottom: 5px solid transparent;
+	border-top: 4px solid transparent;
+	border-left: 4px solid var(--tooltip-color);
+	border-bottom: 4px solid transparent;
 	position: absolute;
 	top: 50%;
 	left: 100%;
