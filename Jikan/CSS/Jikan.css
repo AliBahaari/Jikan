@@ -37,8 +37,11 @@
     --link-color: #2980B9;
     --link-color-active-focus: #CB4335;
     /* Main Background & Muted */
-    --gray-color: #F8F9F9;
+    --gray-color: #FBFBFB;
     --muted-color: #858585;
+    --border-color: #EEE;
+    --hover-color: #F9F9F9;
+    --active-color: #F4F4F4;
     /* Selection */
     --selection: #EBF5FB;
     /* Tooltip */
@@ -1668,13 +1671,13 @@ figcaption {
 /* Group List */
 
 .lstGroup {
-    border: 1px solid #EEE;
+    border: 1px solid var(--border-color);
     margin: 10px 0;
 }
 
 .lstGroup li {
     list-style-type: none;
-    border-bottom: 1px solid #EEE;
+    border-bottom: 1px solid var(--border-color);
     padding: 6px 10px;
 }
 
@@ -1692,7 +1695,7 @@ figcaption {
 }
 
 .lstActive {
-    background-color: #F5F5F5;
+    background-color: var(--active-color);
 }
 
 .lstDisabled {
@@ -1701,7 +1704,7 @@ figcaption {
 }
 
 .lstHover:hover {
-    background-color: #F9F9F9;
+    background-color: var(--hover-color);
 }
 
 /* Loaders */
@@ -1784,7 +1787,7 @@ figcaption {
 
 .mnu {
     height: 100%;
-    border: 1px solid #EEE;
+    border: 1px solid var(--border-color);
     overflow-y: auto;
 }
 
@@ -1815,7 +1818,7 @@ figcaption {
 .mnu li {
     list-style-type: none;
     font-size: 12px;
-    border-top: 1px solid #EEE;
+    border-top: 1px solid var(--border-color);
     padding: 10px;
     text-align: center;
     -webkit-transition: background-color ease 100ms;
@@ -1825,11 +1828,11 @@ figcaption {
 }
 
 .mnu li:hover {
-    background-color: #F9F9F9;
+    background-color: var(--hover-color);
 }
 
-.mnuLinkActive {
-    background-color: #F5F5F5;
+.mnuActive {
+    background-color: var(--active-color);
 }
 
 .mnu li a {
