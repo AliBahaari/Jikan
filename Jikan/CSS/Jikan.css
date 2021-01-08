@@ -1812,7 +1812,7 @@ figcaption {
     height: 100px;
     display: block;
     margin: 20px auto;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .mnu li {
