@@ -1783,15 +1783,14 @@ figcaption {
 /* Menu */
 
 .mnu {
-    height: 100vh;
-    background-color: #F5F5F5;
-    border-right: 1px solid #EEE;
+    height: 100%;
+    border: 1px solid #EEE;
     overflow-y: auto;
 }
 
 .mnuFixedLeft,
 .mnuFixedRight {
-    min-width: 225px;
+    min-width: 200px;
     position: fixed;
     top: 0;
     z-index: 6000;
@@ -1803,37 +1802,34 @@ figcaption {
 
 .mnuFixedRight {
     right: 0;
-    border-right: 0;
-    border-left: 1px solid #EEE;
 }
 
 .mnuAvatar {
     width: 100px;
     height: 100px;
-    display: inline-block;
-    margin: 40px 0;
-    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 2px;
 }
 
 .mnu li {
     list-style-type: none;
-    font-size: .95rem;
-    background-color: #F1F1F1;
-    border-top: 1px solid #E5E5E5;
+    font-size: 12px;
+    border-top: 1px solid #EEE;
     padding: 10px;
     text-align: center;
-    -webkit-transition: background-color linear 250ms;
-       -moz-transition: background-color linear 250ms;
-         -o-transition: background-color linear 250ms;
-            transition: background-color linear 250ms;
-}
-
-.mnu li:last-child {
-    border-bottom: 1px solid #E5E5E5;
+    -webkit-transition: background-color ease 100ms;
+       -moz-transition: background-color ease 100ms;
+         -o-transition: background-color ease 100ms;
+            transition: background-color ease 100ms;
 }
 
 .mnu li:hover {
-    background-color: #EEE;
+    background-color: #F9F9F9;
+}
+
+.mnuLinkActive {
+    background-color: #F5F5F5;
 }
 
 .mnu li a {
