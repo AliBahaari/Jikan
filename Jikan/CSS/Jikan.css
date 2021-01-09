@@ -2334,7 +2334,7 @@ figcaption {
 /* Tab */
 
 .tab {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .tab ul::after {
@@ -2346,28 +2346,23 @@ figcaption {
 .tab ul li {
     float: left;
     list-style-type: none;
-    padding: 5px 10px;
-    background-color: #FFF;
-    border: 1px solid #DDD;
+    padding: 4px 8px;
+    border: 1px solid var(--border-color);
     border-bottom: 0;
     border-right: 0;
     cursor: pointer;
 }
 
 .tab ul li:last-child {
-    border-right: 1px solid #DDD;
+    border-right: 1px solid var(--border-color);
 }
 
 .tab ul li:hover {
-    background-color: #F7F7F7;
+    background-color: var(--hover-color);
 }
 
 .tabActive {
-    background-color: #EEE !important;
-}
-
-.tabActive:hover {
-    background-color: #EEE !important;
+    background-color: var(--active-color);
 }
 
 .tabDisabled {
@@ -2381,18 +2376,11 @@ figcaption {
 
 .tab .tabContainer {
     position: relative;
-    min-height: 200px;
-    border: 1px solid #DDD;
+    border: 1px solid var(--border-color);
 }
 
 .tab .tabContainer div {
-    width: 100%;
-    height: 100%;
-    background-color: #FFF;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px;
+    padding: 8px;
     display: none;
 }
 
