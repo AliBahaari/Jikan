@@ -1992,7 +1992,7 @@ figcaption {
 /* Pagination */
 
 .pgt {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .pgt::after {
@@ -2004,48 +2004,32 @@ figcaption {
 .pgt li {
     float: left;
     list-style-type: none;
-    padding: 10px;
-    background-color: #FFF;
-    border: 1px solid #DDD;
+    padding: 4px 10px;
+    border: 1px solid var(--border-color);
     border-right: 0;
-    font-size: .90rem;
-    color: #555;
+    color: var(--muted-color);
 }
 
 .pgt li:last-child {
-    border-right: 1px solid #DDD;
+    border-right: 1px solid var(--border-color);
 }
 
 .pgt li:hover {
-    background-color: #F5F5F5;
+    background-color: var(--hover-color);
 }
 
 .pgtActive {
-    background-color: #EEE !important;
-}
-
-.pgtDisabled {
-    color: #AAA !important;
-    cursor: not-allowed;
-}
-
-.pgtDisabled:hover {
-    background-color: #FFF !important;
+    background-color: var(--active-color);
 }
 
 .pgt li a {
     text-decoration: none;
-    color: #2E86C1;
+    color: var(--link-color);
 }
 
-.pgtLarge li {
-    padding: 15px;
-    font-size: 1.10rem;
-}
-
-.pgtSmall li {
-    padding: 5px;
-    font-size: .80rem;
+.pgt li a:active,
+.pgt li a:focus {
+    color: var(--link-color-active-focus);
 }
 
 /* Panel */
