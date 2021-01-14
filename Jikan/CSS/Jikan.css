@@ -2021,29 +2021,6 @@ figcaption {
     color: #FFF;
 }
 
-/* Print */
-
-@media print {
-    .prtBlock {
-        display: block;
-    }
-    .prtInline {
-        display: inline;
-    }
-    .prtInlineBlock {
-        display: inline-block;
-    }
-    .prtNone {
-        display: none;
-    }
-    .prtVisible {
-        visibility: visible;
-    }
-    .prtInvisible {
-        visibility: hidden;
-    }
-}
-
 /* Progress */
 
 .prg {
@@ -2457,4 +2434,27 @@ figcaption {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
+}
+
+/* Print */
+
+@media only print {
+    .prtBlock {
+        display: block;
+    }
+    .prtInline {
+        display: inline;
+    }
+    .prtInlineBlock {
+        display: inline-block;
+    }
+    .prtNone {
+        display: none;
+    }
+    .prtVisible {
+        visibility: visible;
+    }
+    .prtInvisible {
+        visibility: hidden;
+    }
 }
