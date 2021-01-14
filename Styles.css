@@ -1,7 +1,13 @@
-.Docs {
-    margin-top: 50px;
+.docContainer {
+    margin-top: 40px;
 }
 
-.SubTitle {
-    color: #555;
+.subTitle {
+    color: #858585;
+}
+
+footer {
+    border-top: 1px solid #EEE;
+    margin-top: 40px;
+    padding: 20px;
 }
