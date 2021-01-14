@@ -41,13 +41,16 @@
     --muted-color: #858585;
     --border-color: #EEE;
     --hover-color: #F9F9F9;
-    --active-color: #F4F4F4;
+    --active-focus-color: #F4F4F4;
     /* Selection */
     --selection: #EBF5FB;
     /* Tooltip */
     --tooltip-color: #1B4F72;
     /* List Group Badge */
     --list-group-badge-color: #F39C12;
+    /* Nav Toggle */
+    --nav-toggle-color: #F5B041;
+    --nav-toggle-border-color: #F39C12;
 }
 
 /* Cells */
@@ -1695,7 +1698,7 @@ figcaption {
 }
 
 .lstActive {
-    background-color: var(--active-color);
+    background-color: var(--active-focus-color);
 }
 
 .lstDisabled {
@@ -1832,7 +1835,7 @@ figcaption {
 }
 
 .mnuActive {
-    background-color: var(--active-color);
+    background-color: var(--active-focus-color);
 }
 
 .mnu li a {
@@ -1915,12 +1918,13 @@ figcaption {
 /* Navbar */
 
 .nav {
-    width: 100%;
-    background-color: #EEE;
+    background-color: var(--gray-color);
+    border: 1px solid var(--border-color);
 }
 
 .navFixedTop,
 .navFixedBottom {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -1940,52 +1944,50 @@ figcaption {
 .nav ul li {
     float: left;
     list-style-type: none;
-    padding: 10px 12.5px;
-    font-size: .90rem;
-    -webkit-transition: background-color linear 250ms;
-       -moz-transition: background-color linear 250ms;
-         -o-transition: background-color linear 250ms;
-            transition: background-color linear 250ms;
+    padding: 10px 14px;
+    -webkit-transition: background-color ease 100ms;
+       -moz-transition: background-color ease 100ms;
+         -o-transition: background-color ease 100ms;
+            transition: background-color ease 100ms;
 }
 
 .nav ul li:hover {
-    background-color: #E5E5E5;
+    background-color: var(--hover-color);
 }
 
 .nav ul li a {
-    color: #333;
+    color: #000;
     text-decoration: none;
 }
 
 .navActive {
-    background-color: #DDD;
+    background-color: var(--active-focus-color);
 }
 
 .navToggle {
-    width: 30px;
-    height: 30px;
-    background-color: #D5D5D5;
+    width: 20px;
+    height: 20px;
+    background-color: var(--nav-toggle-color);
+    border: 1px solid var(--nav-toggle-border-color);
     border-radius: 100%;
     cursor: pointer;
     display: none;
-    border: 1px solid #CCC;
     margin: 0 auto;
 }
 
 @media only screen and (max-width: 45em) {
     .nav {
-        padding: 5px 0;
+        padding: 6px 0;
     }
     .nav ul {
         display: none;
-        margin-top: 5px;
-        margin-bottom: -5px;
+        margin-top: 6px;
     }
     .navToggle {
         display: block;
     }
     .nav ul li {
-        float: none !important;
+        float: none;
     }
 }
 
@@ -2019,7 +2021,7 @@ figcaption {
 }
 
 .pgtActive {
-    background-color: var(--active-color);
+    background-color: var(--active-focus-color);
 }
 
 .pgt li a {
@@ -2346,7 +2348,7 @@ figcaption {
 }
 
 .tabActive {
-    background-color: var(--active-color);
+    background-color: var(--active-focus-color);
 }
 
 .tabDisabled {
