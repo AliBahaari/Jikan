@@ -51,6 +51,9 @@
     /* Nav Toggle */
     --nav-toggle-color: #F5B041;
     --nav-toggle-border-color: #F39C12;
+    /* Modal Close Button */
+    --modal-close-button-color: #E74C3C;
+    --modal-close-button-hover-color: #CB4335;
 }
 
 /* Cells */
@@ -1762,8 +1765,10 @@ figcaption {
 	position: fixed;
 	display: none;
 	top: 100px;
-	left: 50%;
-	z-index: 8000;
+    left: 50%;
+    border: 1px solid var(--border-color);
+    z-index: 8000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -1772,46 +1777,41 @@ figcaption {
 .mdlHeader,
 .mdlBody,
 .mdlFooter {
-	padding: 10px;
+	padding: 6px 10px;
 }
 
 .mdlHeader {
-	border-bottom: 1px solid #EEE;
+	border-bottom: 1px solid var(--border-color);
 }
 
 .mdlBody {
 	max-height: 300px;
 	overflow-y: auto;
-	position: relative;
 }
 
 .mdlFooter {
-	border-top: 1px solid #EEE;
+	border-top: 1px solid var(--border-color);
 }
 
 .mdlClose {
-	background-color: #CB4335;
-	padding: 5px 10px;
-	border-radius: 3.5px;
+	background-color: var(--modal-close-button-color);
+	padding: 4px 8px;
+	border-radius: 2px;
 	color: #FFF;
 	position: absolute;
-	top: -12.5px;
-	right: -12.5px;
-	font-size: .80rem;
+	bottom: calc(100% - 14px);
+    right: -14px;
+    font-size: 12px;
+    font-weight: bold;
 	cursor: pointer;
-    -webkit-transition: background-color linear 250ms;
-       -moz-transition: background-color linear 250ms;
-         -o-transition: background-color linear 250ms;
-            transition: background-color linear 250ms;
+    -webkit-transition: background-color ease 100ms;
+       -moz-transition: background-color ease 100ms;
+         -o-transition: background-color ease 100ms;
+            transition: background-color ease 100ms;
 }
 
 .mdlClose:hover {
-	background-color: #AC382C;
-}
-
-.mdlClose:active,
-.mdlClose:focus {
-	background-color: #9D3328;
+	background-color: var(--modal-close-button-hover-color);
 }
 
 @media only screen and (max-width: 64em) {
@@ -2337,7 +2337,7 @@ figcaption {
 	color: #FFF;
 	font-size: 10px;
 	padding: 4px 10px;
-	z-index: 6000;
+	z-index: 7000;
 }
 
 .tlp:hover > span {

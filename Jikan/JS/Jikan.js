@@ -13,9 +13,9 @@ function openModal(Modal) {
 		top: 0;
 		left: 0;
 		position: fixed;
-		opacity: 0.75;
-		z-index: 7900;
-		background: #EEE;
+		opacity: 0.6;
+		z-index: 7500;
+		background: #000;
 	`;
 	document.body.appendChild(behindLayer);
 	behindLayer.onclick = function() {
