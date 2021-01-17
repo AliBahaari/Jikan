@@ -1138,11 +1138,6 @@ a:active {
     cursor: not-allowed;
 }
 
-.frmInline {
-    display: inline;
-    margin-right: 10px;
-}
-
 .frmCaption {
     color: var(--muted-color);
     font-size: 10px;
@@ -1238,47 +1233,6 @@ a:active {
 
 .noResize {
     resize: none !important;
-}
-
-.frmGroup .frmFile {
-    width: 125px;
-    position: relative;
-    background-color: #1E8449;
-    display: block;
-    margin: 5px auto;
-}
-
-.frmGroup .frmFile span {
-    color: #FFF;
-    display: block;
-    text-align: center;
-    font-size: 1.15rem;
-    padding: 10px 0;
-}
-
-.frmGroup .frmFile input[type="file"] {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    margin: 0;
-}
-
-.frmGroup input[type="file"] {
-    border: 0;
-    padding: 0;
-}
-
-.frmGroup input[type="file"][readonly="readonly"],
-.frmGroup input[type="file"][readonly],
-.frmGroup input[type="file"]:disabled {
-    background-color: transparent;
-}
-
-.frmGroup input[type="file"]:disabled {
-    cursor: not-allowed;
 }
 
 .frmGroup input[type="checkbox"],
