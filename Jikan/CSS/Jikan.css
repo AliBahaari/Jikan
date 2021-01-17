@@ -79,7 +79,7 @@
     padding: 0;
 }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 25rem) {
     /* Helpers */
     .XSBlock {
         display: block;
@@ -181,7 +181,7 @@
     }
 }
 
-@media only screen and (min-width: 25em) and (max-width: 45em) {
+@media only screen and (min-width: 25rem) and (max-width: 45rem) {
     /* Helpers */
     .MIBlock {
         display: block;
@@ -283,7 +283,7 @@
     }
 }
 
-@media only screen and (min-width: 45em) and (max-width: 64em) {
+@media only screen and (min-width: 45rem) and (max-width: 64rem) {
     /* Helpers */
     .SMBlock {
         display: block;
@@ -385,7 +385,7 @@
     }
 }
 
-@media only screen and (min-width: 64em) and (max-width: 87.5em) {
+@media only screen and (min-width: 64rem) and (max-width: 87.5rem) {
     /* Helpers */
     .MDBlock {
         display: block;
@@ -487,7 +487,7 @@
     }
 }
 
-@media only screen and (min-width: 87.5em) {
+@media only screen and (min-width: 87.5rem) {
     /* Helpers */
     .LGBlock {
         display: block;
