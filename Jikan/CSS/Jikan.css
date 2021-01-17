@@ -1105,20 +1105,20 @@ a:active {
 }
 
 .frmGroup label {
-    display: inline !important;
-    font-size: .90rem;
-    margin: 5px 0;
+    display: block;
+    font-size: 12px;
+    margin: 4px 0;
 }
 
 .frmGroup input {
     width: 100%;
-    height: 35px;
-    border: 1px solid #DDD;
+    height: 34px;
+    border: 1px solid var(--border-color);
     display: block;
-    padding: 0 5px;
+    padding: 0 6px;
     font-family: inherit;
-    color: #555;
-    margin: 5px 0;
+    color: var(--muted-color);
+    margin: 4px 0;
 }
 
 .frmGroup input[readonly="readonly"],
@@ -1128,14 +1128,51 @@ a:active {
 .frmGroup input:disabled,
 .frmGroup select:disabled,
 .frmGroup textarea:disabled {
-    background-color: #F5F5F5;
-    color: #AAA;
+    background-color: var(--gray-color);
+    color: var(--muted-color);
 }
 
 .frmGroup input:disabled,
 .frmGroup select:disabled,
 .frmGroup textarea:disabled {
     cursor: not-allowed;
+}
+
+.frmInline {
+    display: inline;
+    margin-right: 10px;
+}
+
+.frmCaption {
+    color: var(--muted-color);
+    font-size: 10px;
+}
+
+.frmSuccess input {
+    border-color: var(--success-color);
+    color: var(--success-color);
+}
+
+.frmSuccess .frmCaption {
+    color: var(--success-color);
+}
+
+.frmWarning input {
+    border-color: var(--warning-color);
+    color: var(--warning-color);
+}
+
+.frmWarning .frmCaption {
+    color: var(--warning-color);
+}
+
+.frmDanger input {
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}
+
+.frmDanger .frmCaption {
+    color: var(--danger-color);
 }
 
 .frmSelect span {
@@ -1245,88 +1282,12 @@ a:active {
     cursor: not-allowed;
 }
 
-.frmLarge {
-    height: 45px !important;
-    font-size: 1.25rem;
-}
-
-.frmSmall {
-    height: 30px !important;
-    font-size: .80rem;
-}
-
 .frmGroup input[type="checkbox"],
 .frmGroup input[type="radio"] {
     width: auto;
     display: inline;
     vertical-align: middle;
     cursor: pointer;
-}
-
-.frmInline {
-    display: inline;
-    margin-right: 15px;
-}
-
-.frmCaption {
-    color: #555;
-    font-size: .75rem;
-    margin: 5px 0;
-}
-
-.frmSuccess input {
-    border-color: #229954;
-}
-
-.frmSuccess .frmCaption {
-    color: #229954;
-}
-
-.frmWarning input {
-    border-color: #F39C12;
-}
-
-.frmWarning .frmCaption {
-    color: #F39C12;
-}
-
-.frmDanger input {
-    border-color: #CB4335;
-}
-
-.frmDanger .frmCaption {
-    color: #CB4335;
-}
-
-.frmCaptcha {
-    display: table;
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0;
-    border: 1px solid #DDD;
-}
-
-.frmCaptcha > div {
-    display: table-cell;
-    vertical-align: middle;  /* Needed For Safari */
-}
-
-.frmCaptcha .frmCaptchaImg img {
-    width: 100px;
-    display: block;
-    margin: 0;
-}
-
-.frmCaptcha .frmCaptchaArea {
-    width: 100%;
-}
-
-.frmCaptcha .frmCaptchaArea input {
-    border: 0;
-    display: block;
-    width: 100%;
-    padding: 0 5px;
-    font-family: inherit;
 }
 
 /* Customized CheckBox And Radio */
