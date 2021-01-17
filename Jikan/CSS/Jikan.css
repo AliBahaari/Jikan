@@ -1170,56 +1170,6 @@ a:active {
     color: var(--danger-color);
 }
 
-.frmSelect span {
-    width: 0;
-    height: 0;
-    display: block;
-    border-top: 5px solid #000;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    position: absolute;
-    top: 50%;
-    right: 12.5px;
-    z-index: 5000;
-    font-size: .90rem;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-}
-
-.frmSelect select {
-    position: relative;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    padding: 5px;
-    font-family: inherit;
-    cursor: pointer;
-}
-
-.frmSelect option {
-    padding: 5px;
-}
-
-.frmGroup select {
-    width: 100%;
-    border: 1px solid #DDD;
-    background-color: #FFF;
-    display: block;
-    margin: 5px 0;
-    font-family: inherit;
-    cursor: pointer;
-}
-
-.frmGroup select option {
-    padding: 5px;
-    border-bottom: 1px solid #DDD;
-}
-
-.frmGroup select option:last-child {
-    border-bottom: 0;
-}
-
 .frmGroup textarea {
     width: 100%;
     min-height: 100px;
